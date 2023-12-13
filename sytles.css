@@ -46,7 +46,12 @@ nav img{
     display: flex;
     padding-bottom: 20px;
 }
+.form-control{
+    position: relative;
+    width: 100%;
+}
 .form-content input{
+    height: 100%;
     width: 100%;
     font-size: 1rem;
     padding: 15px 20px;
@@ -54,6 +59,25 @@ nav img{
     outline: none;
     border-radius: 4px;
     background: #333;
+    color: #fff;
+}
+.form-content input:is(:focus, :valid){
+    padding: 20px 20px 5px;
+    background: #333;
+}
+.form-control label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+.form-control input:is(:focus, :valid) ~ label{
+    font-size: 0.7rem;
+    transform: translateY(-130%);
 }
 .form-wrapper button{
     width: 100%;
