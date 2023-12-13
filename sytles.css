@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+   background: #000;
+}
+body::before{
+    content: "";
+    background: url(images/hero-img.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    opacity: 0.5;
+}
+nav{
+    padding: 30px 40px;
+    position: fixed;
+    z-index: 1;
+}
+nav img{
+    width: 160px;
+}
+.form-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    width: 430px;
+    height: auto;
+    padding: 60px;
+    margin-top: 40px;
+}
+.form-wrapper h2{
+    color: #fff;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.form-content{
+    display: flex;
+    padding-bottom: 20px;
+}
+.form-content input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #333;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background: #e50914;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.pro-form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.pro-form a, label{
+    color: #b3b3b3;
+    text-decoration: none;
+}
+.pro-form a:hover{
+    text-decoration: underline;
+}
+.form .pro-form :where(label, a){
+    font-size: 0.9rem;
+}
+.remember-me input{
+    margin-right: 5px;
+    accent-color: #333;
+    padding: 200px;
+}
+.bottom{
+    padding-top: 30px;
+}
+.bottom p a{
+    color: #fff;
+}
+.bottom a, small, p{
+    color: #b3b3b3;
+    text-decoration: none;
+}
+.bottom a:hover{
+    text-decoration: underline;
+}
+.bottom p{
+    margin-bottom: 20px;
+}
+.bottom small{
+    padding-top: 30px;
+}
+.bottom small a{
+    color: blue;
+}
