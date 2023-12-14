@@ -48,7 +48,8 @@ nav img{
 }
 .form-control{
     position: relative;
-    width: 100%}
+    width: 100%
+}
 .form-content input{
     height: 100%;
     width: 100%;
@@ -144,12 +145,13 @@ nav img{
         padding: 20px 20px;
         position: fixed;
         z-index: 1;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
     nav img{
         width: 170px;
     }
     .form-wrapper{
+        margin-top: 50px;
         padding-top: 30px;
         position: fixed;
         background: rgba(0, 0, 0, 0.75);
@@ -161,4 +163,40 @@ nav img{
     .bottom{
         padding-top: 60px;
     }
+}
+@media (max-width: 300px) {
+    nav img{
+        width: 100px;
+    }
+    .form-wrapper{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.75);
+        width: 95%;
+        height: auto;
+        top: 50%;
+        padding: 10px;
+    }
+    .form-wrapper{
+        margin-top: 50px;
+        padding-top: 30px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: auto;
+        top: 45%;
+        padding: 10px;
+    }
+    .form-control input:is(:focus, :valid) ~ label{
+        font-size: 0.6rem;
+        transform: translateY(-130%);
+    }
+    .form-control label{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 0.9rem;
+        color: #8c8c8c;
+        transition: all 0.1s ease;
 }
