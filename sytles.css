@@ -48,8 +48,7 @@ nav img{
 }
 .form-control{
     position: relative;
-    width: 100%;
-}
+    width: 100%}
 .form-content input{
     height: 100%;
     width: 100%;
@@ -114,7 +113,7 @@ nav img{
     padding: 200px;
 }
 .bottom{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .bottom p a{
     color: #fff;
@@ -134,4 +133,32 @@ nav img{
 }
 .bottom small a{
     color: blue;
+}
+
+/* Responsiveness */
+@media (max-width: 740px) {
+    body::before{
+        display: none;
+    }
+    nav{
+        padding: 20px 20px;
+        position: fixed;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+    nav img{
+        width: 170px;
+    }
+    .form-wrapper{
+        padding-top: 30px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.75);
+        width: 95%;
+        height: auto;
+        top: 40%;
+        padding: 20px;
+    }
+    .bottom{
+        padding-top: 60px;
+    }
 }
